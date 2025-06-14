@@ -7,7 +7,7 @@ export default function PokemonCard({ pokemon, salvarPokemon }) {
     const habilidades = pokemon.abilities.map(a => a.ability.name).join(', ');
 
     return (
-        <Card className="mx-auto" style={{ maxWidth: '500px', marginTop: '1rem' }}>
+        <Card className="mx-auto mt-1" style={{ maxWidth: '500px'}}>
             <Card.Body>
                 <div className="d-flex justify-content-end mb-2">
                     <Button variant="primary" onClick={() => salvarPokemon(pokemon.id)}>
@@ -35,7 +35,7 @@ export default function PokemonCard({ pokemon, salvarPokemon }) {
                         </Col>
                     </Row>
                     <Card.Title className="text-capitalize mt-2">{pokemon.name}</Card.Title>
-                    {pokemon.id === 7 && <Card.Subtitle>O Melhor de todos</Card.Subtitle>}
+                    {[7, 8, 9].includes(pokemon.id) && <Card.Subtitle>O Melhor de todos</Card.Subtitle>}
                     <small className="text-muted">#{pokemon.id}</small>
                 </Card.Header>
 

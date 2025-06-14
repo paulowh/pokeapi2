@@ -55,7 +55,7 @@ export default function PokemonSearch() {
     };
 
     return (
-        <Container style={{ maxWidth: '600px', marginTop: '2rem' }}>
+        <Container style={{ maxWidth: '600px'}}>
             <h2 className="text-center text-primary mb-4">Buscar Pokémon</h2>
 
             <Form>

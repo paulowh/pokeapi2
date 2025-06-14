@@ -16,7 +16,7 @@ export default function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto gap-3">
                         <Nav.Link as={Link} to="/">Pokédex</Nav.Link>
-                        <Nav.Link as={Link} to="/listar">Listar</Nav.Link>
+                        <Nav.Link as={Link} to="/listpokedex">Listar</Nav.Link>
                         <Nav.Link as={Link} to="/mypokedex">Minha Pokedex</Nav.Link>
                         <Nav.Link as={Link} to="/minigame">Mini Game</Nav.Link>
                     </Nav>
