@@ -65,8 +65,8 @@ export default function PokemonCard({ pokemon, salvarPokemon }) {
                             {pokemon.stats.map((stat, i) => (
                                 <Col key={i} xs={6} className="mb-2">
                                     <ListGroup.Item
-                                        className="text-uppercase fw-semibold text-center"
-                                        style={{ backgroundColor: '#f8f9fa' }}
+                                        className="text-lower text-center"
+                                        style={{ backgroundColor: '#f8f9fa', borderRadius: '10px' }}
                                     >
                                         {stat.stat.name}: {stat.base_stat}
                                     </ListGroup.Item>

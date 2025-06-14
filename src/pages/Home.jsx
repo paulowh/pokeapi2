@@ -4,12 +4,12 @@ import PokemonSearch from "../components/PokemonSearch"; // ajuste o caminho con
 import { Container } from "react-bootstrap";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <Container className="py-4">
-        <PokemonSearch />
-      </Container>
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <Container className="py-4">
+                <PokemonSearch />
+            </Container>
+        </>
+    );
 }
